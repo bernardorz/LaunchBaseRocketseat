@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+  {% block head%}
+ 
+  <title>Sobre - Bernardo </title>
+
+  {% endblock %}
+
+{% block content %}
+
+<div id="wrapper">
+
+    <img src="{{items.avatar}}" alt="">
+    <h1>{{items.nome}}</h1>
+    <h2>{{items.role}} at <span>{{items.empresa}}</span></h2>
+</div>
+
+<footer class="links">
+    <a href="{{items.github}}">Github</a>
+    <a href="{{items.linkedin}}">Linkedin</a>
+</footer>
+
+{% endblock %}
